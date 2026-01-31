@@ -5,6 +5,7 @@
 ## 目录
 
 - [Next.js 和 Vercel 部署](./nextjs-vercel-deployment/SKILL.md) - Next.js 16.1.6 和 Vercel 部署相关经验
+- [Supabase 数据库集成](./supabase-integration/SKILL.md) - 在 Next.js 应用中集成 Supabase 数据库
 
 ## 说明
 
@@ -34,3 +35,4 @@
 
 - 2026-01-31: 建立技能管理机制
 - 2026-01-31: 重构为官方Skills标准
+- 2026-01-31: 添加Supabase集成技能
