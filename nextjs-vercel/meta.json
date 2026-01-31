@@ -1,0 +1,9 @@
+{
+  "name": "Next.js 和 Vercel 开发经验",
+  "category": "前端开发",
+  "tags": ["nextjs", "vercel", "deployment", "turbopack"],
+  "version": "1.0.0",
+  "created": "2026-01-31",
+  "updated": "2026-01-31",
+  "description": "Next.js 16.1.6 和 Vercel 部署相关经验，包括常见问题和解决方案"
+}
