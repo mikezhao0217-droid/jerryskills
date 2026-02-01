@@ -236,3 +236,20 @@ export const fetchProjectData = async (): Promise<ProjectData | null> => {
 3. 在 Supabase 仪表板中检查表结构和数据
 4. 使用 Supabase 日志排查API请求问题
 5. 确认RLS策略配置正确
+
+## 常见陷阱及解决方案
+
+### 1. 类型不匹配错误
+**问题**: 构建时出现"Property 'xxx' does not exist on type"错误
+**原因**: 代码中仍存在对旧数据结构的引用
+**解决方案**: 彻底清理所有引用旧数据类型的组件、工具函数和数据文件
+
+### 2. 数据库表不存在
+**问题**: "Undefined table" 或 "relation does not exist" 错误
+**原因**: 忘记在 Supabase 仪表板中创建表
+**解决方案**: 确保在部署代码前先在 Supabase SQL Editor 中运行表创建脚本
+
+### 3. 构建失败
+**问题**: Next.js 构建失败
+**原因**: 代码中存在类型错误或引用了不存在的属性
+**解决方案**: 彻底检查并更新所有组件和工具函数以匹配新的数据模型
