@@ -132,6 +132,18 @@ CREATE POLICY "Allow update access for all users" ON user_projects
   USING (true);
 ```
 
+### 5. 数据库初始化
+确保在应用程序启动时初始化基础数据（部门和团队），以避免外键约束错误：
+```typescript
+// 在应用启动时调用此函数
+import { initializeDatabase } from '@/services/projectService';
+
+// 例如，在页面组件的 useEffect 中调用
+useEffect(() => {
+  initializeDatabase();
+}, []);
+```
+
 ### 5. 创建数据服务
 ```typescript
 // src/services/projectService.ts
